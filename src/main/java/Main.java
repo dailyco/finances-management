@@ -19,8 +19,8 @@ public class Main extends JFrame{
 		setTitle("기쁨의 교회 재정 프로그램");
 		setSize(w, h);
 		
-		add(menuPage);
-//		add(incomePage);
+//		add(menuPage);
+		add(incomePage);
 		
 		setVisible(true);
 	}
