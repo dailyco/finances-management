@@ -1,4 +1,4 @@
-package components;
+package panels.common_components;
 
 import java.awt.FlowLayout;
 
@@ -24,5 +24,9 @@ public class RadioButtonGroup extends JPanel {
 			group.add(buttons[i]);
 			add(buttons[i]);
 		}
+	}
+	
+	public JRadioButton[] getButtons() {
+		return buttons;
 	}
 }
