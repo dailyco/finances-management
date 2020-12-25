@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import panels.common_components.ButtonGroup;
 
 public class Menu extends JPanel {
-	String[] buttons = { "수입 결의서", "지출 결의서", "회계 보고서 생성", "연간 보고서" };
+	String[] buttons = { "수입 결의서", "지출 결의서", "회계 보고서", "연간 보고서" };
 	Dimension size = new Dimension(400, 600);
 	Dimension buttonGroupSize = new Dimension(300, 500);
 	

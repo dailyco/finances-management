@@ -2,12 +2,14 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
+import panels.import_resolution.ExpenditureResolution;
 import panels.import_resolution.ImportResoultion;
 import panels.menu_home.Menu;
 
 public class Main extends JFrame{
 	Menu menuPage = new Menu();
 	ImportResoultion importPage  = new ImportResoultion();
+	ExpenditureResolution expenditurePage = new ExpenditureResolution();
 	
 	Dimension size = new Dimension(500, 600);
 	
@@ -16,8 +18,9 @@ public class Main extends JFrame{
 		setTitle("기쁨의 교회 재정 프로그램");
 		setPreferredSize(size);
 		
-		add(menuPage);
+//		add(menuPage);
 //		add(importPage);
+		add(expenditurePage);
 		
 		pack();
 		setVisible(true);

@@ -27,7 +27,6 @@ public class ButtonGroup extends JPanel {
 			constraints[i].gridx = 0;
 			constraints[i].gridy = i;
 			constraints[i].insets = new Insets(20, 0, 0, 0);
-//			constraints[i].ipady = 10;
 			
 			add(buttons[i], constraints[i]);
 		}
