@@ -31,4 +31,8 @@ public class ButtonGroup extends JPanel {
 			add(buttons[i], constraints[i]);
 		}
 	}
+	
+	public JButton[] getBtns() {
+		return buttons;
+	}
 }
