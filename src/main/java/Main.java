@@ -11,9 +11,9 @@ import panels.menu_home.Menu;
 public class Main extends JFrame {
 	Menu menuPage = new Menu();
 	MenuBar importMenuBar = new MenuBar(Report.IMPORT);
-	MenuBar expenditureMenuBar = new MenuBar(Report.IMPORT);
+//	MenuBar expenditureMenuBar = new MenuBar(Report.IMPORT);
 	ImportResoultion importPage  = new ImportResoultion();
-	ExpenditureResolution expenditurePage = new ExpenditureResolution();
+//	ExpenditureResolution expenditurePage = new ExpenditureResolution();
 	
 	Dimension size = new Dimension(500, 600);
 	
@@ -24,8 +24,8 @@ public class Main extends JFrame {
 		
 //		add(menuPage);
 //		add(importPage);
-		setJMenuBar(expenditureMenuBar);
-		add(expenditurePage);
+//		setJMenuBar(expenditureMenuBar);
+//		add(expenditurePage);
 		
 		pack();
 		setVisible(true);

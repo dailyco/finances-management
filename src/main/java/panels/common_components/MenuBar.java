@@ -4,9 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 import javax.swing.JFileChooser;
 import javax.swing.JMenu;
@@ -15,7 +13,8 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import excel.form.ImportResolutionForm;
+import org.apache.poi.hssf.usermodel.*;
 
 
 public class MenuBar extends JMenuBar {
@@ -68,6 +67,8 @@ public class MenuBar extends JMenuBar {
 		
 		add(home);
 		add(fileMenu);
+
+		saveFile(kind);
 	}
 	
 	void openFile(Report kind) {
@@ -84,6 +85,11 @@ public class MenuBar extends JMenuBar {
 			System.out.println(fileChooser.getSelectedFile()); // 프린트
 			try {
 				HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileChooser.getSelectedFile()));
+
+
+
+
+
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -105,22 +111,24 @@ public class MenuBar extends JMenuBar {
 		// 파일 읽어들여서 데이터로 가공하기
 	}
 	
-	void saveFile(Report kind) {
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file" , "xlsx", "xls");
-		fileChooser.setFileFilter(filter);
-		
-		int ret = fileChooser.showSaveDialog(null);
-		if (ret != JFileChooser.APPROVE_OPTION){
-			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
-			return;
-		}
-		
-		// 데이터 가공해서 파일로 만들어주기
-//		try {
-			
-//		} catch (IOException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
+	public void saveFile(Report kind) {
+//		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file(.xlsx, .xls)" , "xlsx", "xls");
+//		fileChooser.setFileFilter(filter);
+//
+//		int ret = fileChooser.showSaveDialog(null);
+//		if (ret != JFileChooser.APPROVE_OPTION){
+//			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
+//			return;
 //		}
+
+		// 데이터 가공해서 파일로 만들기
+		// 수입 결의서
+		ImportResolutionForm importResolutionForm = new ImportResolutionForm();
+		importResolutionForm.createFile(fileChooser, "hello");
+
+		// 지출 결의서
+
+
+
 	}
 }
