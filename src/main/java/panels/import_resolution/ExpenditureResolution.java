@@ -11,6 +11,7 @@ import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -20,34 +21,68 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 import panels.common_components.HintTextField;
+import panels.common_components.MenuBar;
 import panels.common_components.RadioButtonGroup;
+import panels.common_components.MenuBar.Report;
 
 public class ExpenditureResolution extends JPanel {
+	MenuBar menubar = new MenuBar(Report.EXPENDITURE, this);
+	
 	String[] expenditures = { "관리", "교육", "봉사", "예배", "선교", "예비", "자본관리" };
 	String[][] detailExpenditures = { { "공과금", "도서 인쇄비", "보험료", "비품", "사무비", "상회비", "수도 광열비", "시설관리 유지비", "정원 관리비", "연료비", "잡비", "중식비", "카페 재료비", "지급이자", "차량 유지비", "통신비", "회의비" }, { "교육 활동비", "교육 훈련비", "도서비", "부서협의회비", "장학금" }, { "경조비", "사회봉사비", "접대비", "행사비" }, { "강사료", "목회자 생활비", "목회 활동비", "상여금", "찬양대비", "연금 및 의보" }, { "국내 선교비", "국외 선교비", "새신자 교육비", "심방비" }, { "예비비" }, { "건물 임차료", "건축", "제적립 예금", "차량", "원금상환", "토지" } };
 	final String header[] = { "분류", "항목", "내용", "금액" };
 	String tableContents[][];
 	
-	HashMap<String, String[]> expenditureComboBox;
+	HashMap<String, String[]> expenditureComboBox = new HashMap<String, String[]>() {
+		{
+			for (int i = 0; i < expenditures.length; i++)
+				put(expenditures[i], detailExpenditures[i]);
+		}
+	};
 	DefaultComboBoxModel comboBoxModel;
+	JComboBox<String> detailKind;
 	DefaultTableModel model;
 	JTable table;
 	JTextField kind;
-	JComboBox<String> detailKind;
+	
+	JTextField year;
+	JTextField month;
+	JTextField date;
 	
 	Dimension size = new Dimension(400, 600);
 	Dimension expenditureKindSize = new Dimension(500, 40);
 	
-	public ExpenditureResolution() {
-		// 지출 분류 항목 선택박스 생성
-		expenditureComboBox = new HashMap<String, String[]>() {
-			{
-				for (int i = 0; i < expenditures.length; i++)
-					put(expenditures[i], detailExpenditures[i]);
-			}
-		};
+	public ExpenditureResolution(JFrame frame) {
 		
-		// 지출 분류 라디오버튼 생성
+		JPanel datePanel = createDateSection();
+		JPanel expenditureBtnGroup = createKindSection();
+		JScrollPane tablePanel = createTableSection();
+		JPanel inputPanel = createInputSection();	
+		
+		setPreferredSize(size);
+		add(datePanel, BorderLayout.NORTH);
+		add(expenditureBtnGroup, BorderLayout.NORTH);
+		add(tablePanel, BorderLayout.CENTER);
+		add(inputPanel, BorderLayout.SOUTH);
+	}
+	
+	private JPanel createDateSection() {
+		JLabel dateLabel = new JLabel("날짜 입력: ");
+		year = new HintTextField("년", 5);
+		month = new HintTextField("월", 4);
+		date = new HintTextField("일", 4);
+		
+		JPanel datePanel = new JPanel();
+		datePanel.setLayout(new BoxLayout(datePanel, BoxLayout.X_AXIS));
+		datePanel.add(dateLabel);
+		datePanel.add(year);
+		datePanel.add(month);
+		datePanel.add(date);
+		
+		return datePanel;
+	}
+	
+	private JPanel createKindSection() {	
 		JPanel expenditureBtnGroup = new RadioButtonGroup(expenditures);
 		expenditureBtnGroup.setPreferredSize(expenditureKindSize);
 		for (JRadioButton rb : ((RadioButtonGroup) expenditureBtnGroup).getButtons()) {
@@ -61,7 +96,10 @@ public class ExpenditureResolution extends JPanel {
 			});
 		}
 		
-		// 테이블 생성
+		return expenditureBtnGroup;
+	}
+	
+	private JScrollPane createTableSection() {
 		model = new DefaultTableModel(tableContents, header) {
 			public boolean isCellEditable(int i, int c) {
 				if (c == 0 ||c == 1) return false;
@@ -73,14 +111,7 @@ public class ExpenditureResolution extends JPanel {
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
-		// input 입력 섹션 생성
-		JPanel inputPanel = createInputSection();	
-		
-		// 전체 Panel 설정 
-		setPreferredSize(size);
-		add(expenditureBtnGroup, BorderLayout.NORTH);
-		add(scrollpane, BorderLayout.CENTER);
-		add(inputPanel, BorderLayout.SOUTH);
+		return scrollpane;
 	}
 	
 	private JPanel createInputSection() {
@@ -149,5 +180,17 @@ public class ExpenditureResolution extends JPanel {
 		});
 		
 		return delBtn;
+	}
+	
+	public MenuBar getMenuBar() {
+		return menubar;
+	}
+	
+	public DefaultTableModel getModel() {
+		return model;
+	}
+	
+	public String getDate() {
+		return year.getText() + "년 " + month.getText() + "월 " + date.getText() + "일\n";
 	}
 }
