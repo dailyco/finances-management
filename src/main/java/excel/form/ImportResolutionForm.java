@@ -1,5 +1,6 @@
 package excel.form;
 
+import manufacture.datas.ImportData;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
@@ -16,7 +17,7 @@ public class ImportResolutionForm {
     int rowCnt = 41, colCnt = 7, bodyStartCol1 = 23, bodyStartCol2 = 6;
     int col0Width = 8, col1Width = 12, col2Width = 8, col3Width = 4, col4Width = 10, col5Width = 4, col6Width = 8, col7Width = 10;
 
-    public void createFile(JFileChooser fileChooser, String data) {
+    public void createFile(JFileChooser fileChooser, ImportData importDatas) {
         try {
             sheets.add(workbook.createSheet("수입 결의서" + "-01")); //새 Sheet 생성
             this.createRowAndCol();
