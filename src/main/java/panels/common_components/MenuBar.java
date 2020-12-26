@@ -11,10 +11,16 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import excel.form.ImportResolutionForm;
 import org.apache.poi.hssf.usermodel.*;
+
+import manufacture.datas.ExpenditureData;
+import manufacture.datas.ImportData;
+import panels.import_resolution.ExpenditureResolution;
+import panels.import_resolution.ImportResoultion;
 
 
 public class MenuBar extends JMenuBar {
@@ -24,12 +30,16 @@ public class MenuBar extends JMenuBar {
 	JMenuItem save = new JMenuItem("저장");
 	JMenuItem open = new JMenuItem("불러오기");
 	
+	JPanel parent;
+
 	public enum Report {
 		IMPORT,
 		EXPENDITURE
 	}
 
-	public MenuBar(Report kind) {
+	public MenuBar(Report kind, JPanel parent) {
+		this.parent = parent;
+
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -67,15 +77,13 @@ public class MenuBar extends JMenuBar {
 		
 		add(home);
 		add(fileMenu);
-
-		saveFile(kind);
 	}
 	
 	void openFile(Report kind) {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file", "xlsx", "xls");
 		fileChooser.setFileFilter(filter);
 
-		int ret = fileChooser.showOpenDialog(null);
+		int ret = fileChooser.showOpenDialog(parent);
 		if (ret != JFileChooser.APPROVE_OPTION){
 			JOptionPane.showMessageDialog(null, "파일을 선택하지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
 			return;
@@ -85,11 +93,6 @@ public class MenuBar extends JMenuBar {
 			System.out.println(fileChooser.getSelectedFile()); // 프린트
 			try {
 				HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileChooser.getSelectedFile()));
-
-
-
-
-
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -111,24 +114,24 @@ public class MenuBar extends JMenuBar {
 		// 파일 읽어들여서 데이터로 가공하기
 	}
 	
-	public void saveFile(Report kind) {
-//		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file(.xlsx, .xls)" , "xlsx", "xls");
-//		fileChooser.setFileFilter(filter);
-//
-//		int ret = fileChooser.showSaveDialog(null);
-//		if (ret != JFileChooser.APPROVE_OPTION){
-//			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
-//			return;
-//		}
+	void saveFile(Report kind) {
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file" , "xlsx", "xls");
+		fileChooser.setFileFilter(filter);
+		
+		int ret = fileChooser.showSaveDialog(parent);
+		if (ret != JFileChooser.APPROVE_OPTION){
+			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
+			return;
+		}
 
-		// 데이터 가공해서 파일로 만들기
-		// 수입 결의서
-		ImportResolutionForm importResolutionForm = new ImportResolutionForm();
-		importResolutionForm.createFile(fileChooser, "hello");
-
-		// 지출 결의서
-
-
-
+		if (kind == Report.IMPORT) {
+			ImportData importDatas = new ImportData(((ImportResoultion)parent).getModel(), ((ImportResoultion)parent).getDate());
+			// 데이터 가공해서 파일로 만들기
+			// 수입 결의서
+			ImportResolutionForm importResolutionForm = new ImportResolutionForm();
+			importResolutionForm.createFile(fileChooser, importDatas);
+		} else if (kind == Report.EXPENDITURE) {
+			ExpenditureData expenditureDatas = new ExpenditureData(((ExpenditureResolution)parent).getModel(), ((ExpenditureResolution)parent).getDate());
+		}
 	}
 }
