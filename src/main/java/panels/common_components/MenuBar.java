@@ -13,9 +13,15 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import manufacture.datas.ExpenditureData;
+import manufacture.datas.ImportData;
+import panels.import_resolution.ExpenditureResolution;
+import panels.import_resolution.ImportResoultion;
 
 
 public class MenuBar extends JMenuBar {
@@ -25,12 +31,16 @@ public class MenuBar extends JMenuBar {
 	JMenuItem save = new JMenuItem("저장");
 	JMenuItem open = new JMenuItem("불러오기");
 	
+	JPanel parent;
+	
 	public enum Report {
 		IMPORT,
 		EXPENDITURE
 	}
 
-	public MenuBar(Report kind) {
+	public MenuBar(Report kind, JPanel parent) {
+		this.parent = parent;
+		
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -74,7 +84,7 @@ public class MenuBar extends JMenuBar {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file", "xlsx", "xls");
 		fileChooser.setFileFilter(filter);
 
-		int ret = fileChooser.showOpenDialog(null);
+		int ret = fileChooser.showOpenDialog(parent);
 		if (ret != JFileChooser.APPROVE_OPTION){
 			JOptionPane.showMessageDialog(null, "파일을 선택하지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
 			return;
@@ -109,18 +119,18 @@ public class MenuBar extends JMenuBar {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file" , "xlsx", "xls");
 		fileChooser.setFileFilter(filter);
 		
-		int ret = fileChooser.showSaveDialog(null);
+		int ret = fileChooser.showSaveDialog(parent);
 		if (ret != JFileChooser.APPROVE_OPTION){
 			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
 			return;
 		}
 		
-		// 데이터 가공해서 파일로 만들어주기
-//		try {
-			
-//		} catch (IOException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		if (kind == Report.IMPORT) {
+			ImportData importDatas = new ImportData(((ImportResoultion)parent).getModel(), ((ImportResoultion)parent).getDate());
+			for (String key : importDatas.keySet()) {
+			}
+		} else if (kind == Report.EXPENDITURE) {
+			ExpenditureData expenditureDatas = new ExpenditureData(((ExpenditureResolution)parent).getModel(), ((ExpenditureResolution)parent).getDate());
+		}
 	}
 }
