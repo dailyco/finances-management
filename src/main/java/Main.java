@@ -14,7 +14,7 @@ public class Main extends JFrame implements ActionListener {
 	ImportResoultion importPage  = new ImportResoultion(this);
 	ExpenditureResolution expenditurePage = new ExpenditureResolution(this);
 	
-	Dimension size = new Dimension(500, 680);
+	Dimension size = new Dimension(500, 690);
 	
 	Main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,7 +35,7 @@ public class Main extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		new Main();
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton button = (JButton) e.getSource();

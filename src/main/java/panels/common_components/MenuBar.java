@@ -4,9 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 import javax.swing.JFileChooser;
 import javax.swing.JMenu;
@@ -16,7 +14,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import excel.form.ExpenditureResolutionForm;
+import excel.form.ImportResolutionForm;
+import org.apache.poi.hssf.usermodel.*;
 
 import manufacture.datas.ExpenditureData;
 import manufacture.datas.ImportData;
@@ -32,7 +32,7 @@ public class MenuBar extends JMenuBar {
 	JMenuItem open = new JMenuItem("불러오기");
 	
 	JPanel parent;
-	
+
 	public enum Report {
 		IMPORT,
 		EXPENDITURE
@@ -40,7 +40,7 @@ public class MenuBar extends JMenuBar {
 
 	public MenuBar(Report kind, JPanel parent) {
 		this.parent = parent;
-		
+
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -124,13 +124,15 @@ public class MenuBar extends JMenuBar {
 			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
 			return;
 		}
-		
+
 		if (kind == Report.IMPORT) {
 			ImportData importDatas = new ImportData(((ImportResoultion)parent).getModel(), ((ImportResoultion)parent).getDate());
-			for (String key : importDatas.keySet()) {
-			}
+			// 데이터 가공해서 파일로 만들기
+			// 수입 결의서
+			ImportResolutionForm importResolutionForm = new ImportResolutionForm(fileChooser.getSelectedFile().getPath() + ".xls", importDatas);
 		} else if (kind == Report.EXPENDITURE) {
 			ExpenditureData expenditureDatas = new ExpenditureData(((ExpenditureResolution)parent).getModel(), ((ExpenditureResolution)parent).getDate());
+			ExpenditureResolutionForm expenditureResolutionForm = new ExpenditureResolutionForm(fileChooser.getSelectedFile().getPath() + ".xls", expenditureDatas);
 		}
 	}
 }

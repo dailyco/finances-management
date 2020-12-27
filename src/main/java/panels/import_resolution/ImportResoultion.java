@@ -28,11 +28,19 @@ public class ImportResoultion extends JPanel {
 	MenuBar menubar = new MenuBar(Report.IMPORT, this);
 	
 	String[] incomes = { "십일조", "감사헌금", "선교헌금", "건축헌금", "예금이자", "부활감사", "맥추감사", "성탄감사", "추수감사", "신년감사", "기타", "일시차입금", "적립금인출", "차입금", "전년도이월금" };
-	String[] names = { "김효진", "김유진", "김하영", "오종순", "김현섭" };
+	String[] names = { "강재구", "강상완", "강승현", "김명중", "김병선", "김상란", "김연심", "김옥경", "김은희", "김정현", "김진배", "김현섭", "김현숙", 
+			"남보라", "남보미", "남소연", "남안숙", "남정우", "노정식", "라미경", "문충선", "문현숙", "박경식", "박양숙", "박태섭", "백선미", 
+			"백선영", "백수근", "서옥희", "설개심", "신경주", "신난희", "신희숙", "심성자", "오성희", "오종순", "오효경", "이민이", "이순자", 
+			"이승수", "이은자", "이호동", "임승룡", "임영순", "장야위", "전향숙", "정민완", "정순하", "정윤자", "정재희", "정현숙", "정화일", 
+			"조미애", "조현순", "조희용", "진수연", "한상진", "황금자", "황은주", "황충원", "김덕순", "김구분", "도옥순", "박정남", "소정순", 
+			"이점악", "이철순", "유금순", "최은자", "강수민", "강혜민", "김상호", "김선대", "김솔아", "김수환", "김유진", "김주안", "김혜연", 
+			"김효진", "남소진", "문세권", "문세영", "문수휴", "문진영", "박현종", "백솔", "백진송", "백진엽", "송서현", "송아현", "송지현", 
+			"신성민", "신요원", "신채원", "임영환", "임정환", "정성근", "정성설", "한의진", "허성정", "허정", "주일학교", "청소년부", "디모데", 
+			"남선교회", "목녀회", "마닐라", "다니엘", "벧엘", "태국", "인도", "베트남", "동해", "안디옥" };
 	final String header[] = { "종류", "이름 / 내용", "금액" };
 	String contents[][] = { { "주일헌금", "전체", "0" } };
 	
-	Dimension size = new Dimension(400, 680);
+	Dimension size = new Dimension(400, 630);
 	Dimension importKindSize = new Dimension(500, 100);
 	JComboBox<String> nameBox;
 	DefaultTableModel model;
@@ -168,7 +176,7 @@ public class ImportResoultion extends JPanel {
 		delBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (table.getSelectedRow() == -1) return;
+				if (table.getSelectedRow() == -1 || table.getSelectedRow() == 0) return;
 				model.removeRow(table.getSelectedRow());
 			}
 		});
