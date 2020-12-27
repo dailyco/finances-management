@@ -22,39 +22,19 @@
         <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/excel-income-format" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ff1f09-31ab-48a6-91f1-6dc3f6a81497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/excel/form/data/ImportAside.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/excel/form/data/ImportHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/excel/form/data/ImportSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/excel/form/data/ImportUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/excel/form/ImportResolutionForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/excel/form/ImportResolutionForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/ButtonGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/ButtonGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar$Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/menu_home/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/menu_home/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/excel/form/ImportResolutionForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/excel/form/ImportResolutionForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manufacture/datas/Import.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manufacture/datas/Import.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manufacture/datas/ImportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manufacture/datas/ImportData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +119,7 @@
       <updated>1608893715623</updated>
       <workItem from="1608893718568" duration="24386000" />
       <workItem from="1608946123343" duration="35113000" />
-      <workItem from="1608990419823" duration="19234000" />
+      <workItem from="1608990419823" duration="19925000" />
     </task>
     <task id="LOCAL-00001" summary="[INCOME EXCEL FORMAT]&#10;- income format(header, aside) 작업 완료&#10;- income format(body) 작업중">
       <created>1608957589636</created>
@@ -148,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608957589637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Import excel 포맷 개발">
+      <created>1609075757843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609075757843</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +146,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/excel-income-format" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -168,7 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[INCOME EXCEL FORMAT]&#10;- income format(header, aside) 작업 완료&#10;- income format(body) 작업중" />
-    <option name="LAST_COMMIT_MESSAGE" value="[INCOME EXCEL FORMAT]&#10;- income format(header, aside) 작업 완료&#10;- income format(body) 작업중" />
+    <MESSAGE value="Import excel 포맷 개발" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import excel 포맷 개발" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="153" key="#Project_Structure" timestamp="1608957677190">
@@ -354,19 +354,22 @@
     <state width="1675" height="374" key="GridCell.Tab.1.right/78.23.1714.1097@78.23.1714.1097" timestamp="1608989323410" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/80.23.1712.1097@0.0.1792.1120" timestamp="1608982527535" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/80.23.1712.1097@80.23.1712.1097" timestamp="1608981992174" />
-    <state x="125" y="23" width="1667" height="1055" key="MergeDialog" timestamp="1608958100331">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state x="121" y="23" width="1667" height="1055" key="MergeDialog" timestamp="1609075849109">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
+    <state x="121" y="23" key="MergeDialog/71.23.1721.1097@71.23.1721.1097" timestamp="1609075849109" />
     <state x="125" y="23" width="1667" height="1055" key="MergeDialog/75.23.1717.1097@75.23.1717.1097" timestamp="1608958100331" />
-    <state x="821" y="445" width="510" height="252" key="MultipleFileMergeDialog" timestamp="1608958100384">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state x="614" y="317" width="701" height="519" key="MultipleFileMergeDialog" timestamp="1609075975015">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
+    <state x="614" y="317" width="701" height="519" key="MultipleFileMergeDialog/71.23.1721.1097@71.23.1721.1097" timestamp="1609075975015" />
     <state x="821" y="445" width="510" height="252" key="MultipleFileMergeDialog/75.23.1717.1097@75.23.1717.1097" timestamp="1608958100384" />
-    <state x="726" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608958148115">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state x="724" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609075981840">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state x="721" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.23.1726.1097@66.23.1726.1097" timestamp="1608914925235" />
     <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/68.23.1724.1097@68.23.1724.1097" timestamp="1608918885091" />
+    <state x="724" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/71.23.1721.1097@71.23.1721.1097" timestamp="1609075981840" />
     <state x="726" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/75.23.1717.1097@75.23.1717.1097" timestamp="1608958148115" />
     <state x="628" y="326" width="606" height="490" key="find.popup" timestamp="1609075104365">
       <screen x="66" y="23" width="1726" height="1097" />
