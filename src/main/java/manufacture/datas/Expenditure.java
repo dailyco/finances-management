@@ -1,17 +1,15 @@
 package manufacture.datas;
 
 public class Expenditure {
-	String category;
-	String subCategory;
-	String content;
-	Integer price;
-	String priceStr;
+	public String category;
+	public String subCategory;
+	public String content;
+	public Integer price;
 	
-	public Expenditure(String category, String subCategory, String content, Integer price, String priceStr) {
+	public Expenditure(String category, String subCategory, String content, Integer price) {
 		this.category = category;
 		this.subCategory = subCategory;
 		this.content = content;
 		this.price = price;
-		this.priceStr = priceStr;
 	}
 }
