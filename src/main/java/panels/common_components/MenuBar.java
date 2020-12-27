@@ -128,8 +128,7 @@ public class MenuBar extends JMenuBar {
 			ImportData importDatas = new ImportData(((ImportResoultion)parent).getModel(), ((ImportResoultion)parent).getDate());
 			// 데이터 가공해서 파일로 만들기
 			// 수입 결의서
-			ImportResolutionForm importResolutionForm = new ImportResolutionForm();
-			importResolutionForm.createFile(fileChooser, importDatas);
+			ImportResolutionForm importResolutionForm = new ImportResolutionForm(fileChooser.getSelectedFile().getPath() + ".xls", importDatas);
 		} else if (kind == Report.EXPENDITURE) {
 			ExpenditureData expenditureDatas = new ExpenditureData(((ExpenditureResolution)parent).getModel(), ((ExpenditureResolution)parent).getDate());
 		}
