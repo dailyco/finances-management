@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import excel.form.ExpenditureResolutionForm;
 import excel.form.ImportResolutionForm;
 import org.apache.poi.hssf.usermodel.*;
 
@@ -131,6 +132,7 @@ public class MenuBar extends JMenuBar {
 			ImportResolutionForm importResolutionForm = new ImportResolutionForm(fileChooser.getSelectedFile().getPath() + ".xls", importDatas);
 		} else if (kind == Report.EXPENDITURE) {
 			ExpenditureData expenditureDatas = new ExpenditureData(((ExpenditureResolution)parent).getModel(), ((ExpenditureResolution)parent).getDate());
+			ExpenditureResolutionForm expenditureResolutionForm = new ExpenditureResolutionForm(fileChooser.getSelectedFile().getPath() + ".xls", expenditureDatas);
 		}
 	}
 }
