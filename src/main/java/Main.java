@@ -5,14 +5,16 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import panels.import_resolution.ExpenditureResolution;
-import panels.import_resolution.ImportResoultion;
+import panels.resolution.ExpenditureResolution;
+import panels.resolution.ImportResoultion;
 import panels.menu_home.Menu;
+import panels.resolution.MonthlyResolution;
 
 public class Main extends JFrame implements ActionListener {
 	Menu menuPage = new Menu();
 	ImportResoultion importPage  = new ImportResoultion(this);
 	ExpenditureResolution expenditurePage = new ExpenditureResolution(this);
+	MonthlyResolution monthlyPage = new MonthlyResolution(this);
 	
 	Dimension size = new Dimension(500, 690);
 	
@@ -58,7 +60,8 @@ public class Main extends JFrame implements ActionListener {
 
 		if (button == menuPage.getImExBtn()) {
 			remove(menuPage);
-//			add(expenditurePage);
+			add(monthlyPage);
+			setJMenuBar(monthlyPage.getImportMenuBar());
 			revalidate();
 			repaint();
 		}

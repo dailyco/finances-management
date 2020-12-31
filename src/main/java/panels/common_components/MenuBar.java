@@ -20,8 +20,8 @@ import org.apache.poi.hssf.usermodel.*;
 
 import manufacture.datas.ExpenditureData;
 import manufacture.datas.ImportData;
-import panels.import_resolution.ExpenditureResolution;
-import panels.import_resolution.ImportResoultion;
+import panels.resolution.ExpenditureResolution;
+import panels.resolution.ImportResoultion;
 
 
 public class MenuBar extends JMenuBar {
@@ -35,7 +35,7 @@ public class MenuBar extends JMenuBar {
 
 	public enum Report {
 		IMPORT,
-		EXPENDITURE
+		EXPENDITURE,
 	}
 
 	public MenuBar(Report kind, JPanel parent) {
