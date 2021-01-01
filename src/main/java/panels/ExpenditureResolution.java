@@ -55,16 +55,10 @@ public class ExpenditureResolution extends JPanel {
 	int w = (int)dimen.getWidth()/2;
 	int h = (int)dimen.getHeight();
 	
-//	Dimension size = new Dimension(400, 630);
-//	Dimension dateSize = new Dimension(400, 35);
-//	Dimension expenditureKindSize = new Dimension(500, 50);
-//	Dimension inputSize = new Dimension(400, 80);
-	
 	Dimension size = new Dimension(w, h);
 	Dimension dateSize = new Dimension(w-w/10, h/16);
 	Dimension expenditureKindSize = new Dimension(w, h/11);
 	Dimension tableSize = new Dimension(w-w/10, (h/13)*7);
-//	Dimension inputSize = new Dimension(w-w/10, (h/15)*2);
 	
 	public ExpenditureResolution(JFrame frame) {
 		menubar = new MenuBar(Report.EXPENDITURE, frame, this);
