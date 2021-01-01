@@ -1,5 +1,6 @@
 package panels.common_components;
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -24,6 +25,7 @@ import manufacture.importdata.ImportData;
 import panels.ExpenditureResolution;
 import panels.ImportResoultion;
 import panels.Menu;
+import panels.font.TextFont;
 
 public class MenuBar extends JMenuBar {
 	JFileChooser fileChooser = new JFileChooser();
@@ -33,6 +35,8 @@ public class MenuBar extends JMenuBar {
 //	JMenuItem open = new JMenuItem("불러오기");
 
 	JPanel parent;
+
+	Font textFont = new TextFont().getText();
 
 	public enum Report {
 		IMPORT,

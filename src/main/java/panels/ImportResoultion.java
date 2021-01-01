@@ -20,14 +20,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-import javax.xml.soap.Text;
 
 import panels.common_components.HintTextField;
 import panels.common_components.MenuBar;
 import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
 import panels.font.TextFont;
-import panels.font.TitleFont;
 
 public class ImportResoultion extends JPanel {
 	MenuBar menubar;
