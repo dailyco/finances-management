@@ -38,10 +38,7 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/font/TextFont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/font/TextFont.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/font/TitleFont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/font/TitleFont.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,39 +228,44 @@
       <screen x="75" y="23" width="1717" height="1097" />
     </state>
     <state x="451" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/75.23.1717.1097@75.23.1717.1097" timestamp="1608946696172" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom" timestamp="1609509178424">
-      <screen x="68" y="23" width="1724" height="1097" />
+    <state x="175" y="123" width="1517" height="897" key="DiffContextDialog" timestamp="1609510183488">
+      <screen x="71" y="23" width="1721" height="1097" />
+    </state>
+    <state x="175" y="123" width="1517" height="897" key="DiffContextDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609509970508" />
+    <state x="175" y="123" width="1517" height="897" key="DiffContextDialog/71.23.1721.1097@71.23.1721.1097" timestamp="1609510183488" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom" timestamp="1609510146182">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406439" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222573" />
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178424" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515644" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1609510146182" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center" timestamp="1609509178423">
-      <screen x="68" y="23" width="1724" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center" timestamp="1609510146182">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1608899957421" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406438" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222572" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center/71.23.1721.1097@71.23.1721.1097" timestamp="1609510146182" />
     <state width="1675" height="374" key="GridCell.Tab.0.center/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left" timestamp="1609509178423">
-      <screen x="68" y="23" width="1724" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left" timestamp="1609510146181">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.left/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065721" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406437" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222571" />
     <state width="1675" height="303" key="GridCell.Tab.0.left/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left/71.23.1721.1097@71.23.1721.1097" timestamp="1609510146181" />
     <state width="1675" height="374" key="GridCell.Tab.0.left/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right" timestamp="1609509178423">
-      <screen x="68" y="23" width="1724" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right" timestamp="1609510146182">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.right/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406438" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222572" />
     <state width="1675" height="303" key="GridCell.Tab.0.right/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right/71.23.1721.1097@71.23.1721.1097" timestamp="1609510146182" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom" timestamp="1609506155254">
@@ -302,15 +304,26 @@
     <state width="1675" height="374" key="GridCell.Tab.1.right/71.23.1721.1097@71.23.1721.1097" timestamp="1608900027562" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957451" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513746" />
+    <state x="68" y="23" width="1726" height="1097" key="MergeDialog" timestamp="1609509994238">
+      <screen x="68" y="23" width="1724" height="1097" />
+    </state>
+    <state x="66" y="23" width="1726" height="1097" key="MergeDialog/66.23.1726.1097@66.23.1726.1097" timestamp="1609509739469" />
+    <state x="68" y="23" key="MergeDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609509994238" />
+    <state x="738" y="287" width="510" height="252" key="MultipleFileMergeDialog" timestamp="1609509994296">
+      <screen x="68" y="23" width="1724" height="1097" />
+    </state>
+    <state x="737" y="287" width="764" height="410" key="MultipleFileMergeDialog/66.23.1726.1097@66.23.1726.1097" timestamp="1609509742011" />
+    <state x="738" y="287" width="510" height="252" key="MultipleFileMergeDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609509994296" />
     <state x="639" y="281" key="RollbackChangesDialog" timestamp="1609506066847">
       <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state x="639" y="281" key="RollbackChangesDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609506066847" />
-    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609506084152">
-      <screen x="68" y="23" width="1724" height="1097" />
+    <state x="724" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609510033821">
+      <screen x="71" y="23" width="1721" height="1097" />
     </state>
-    <state x="721" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.23.1726.1097@66.23.1726.1097" timestamp="1608914925235" />
-    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/68.23.1724.1097@68.23.1724.1097" timestamp="1609506084152" />
+    <state x="721" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.23.1726.1097@66.23.1726.1097" timestamp="1609509647689" />
+    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/68.23.1724.1097@68.23.1724.1097" timestamp="1609509986721" />
+    <state x="724" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/71.23.1721.1097@71.23.1721.1097" timestamp="1609510033821" />
     <state x="726" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/75.23.1717.1097@75.23.1717.1097" timestamp="1609385921875" />
     <state x="631" y="326" width="604" height="490" key="find.popup" timestamp="1609387568613">
       <screen x="71" y="23" width="1721" height="1097" />

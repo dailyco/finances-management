@@ -31,7 +31,7 @@ public class MenuBar extends JMenuBar {
 	JMenu fileMenu = new JMenu("파일");
 	JMenuItem save = new JMenuItem("저장");
 //	JMenuItem open = new JMenuItem("불러오기");
-	
+
 	JPanel parent;
 
 	public enum Report {
@@ -41,7 +41,7 @@ public class MenuBar extends JMenuBar {
 
 	public MenuBar(Report kind, JFrame frame, JPanel parent) {
 		this.parent = parent;
-		
+
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -54,14 +54,14 @@ public class MenuBar extends JMenuBar {
 						frame.setJMenuBar(null);
 						frame.revalidate();
 						frame.repaint();
-						
-				        dialog.dispose(); //다이얼로그 제거
+
+						dialog.dispose(); //다이얼로그 제거
 					}
 				});
 				dialog.cancel.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-				        dialog.dispose(); //다이얼로그 제거
+						dialog.dispose(); //다이얼로그 제거
 					}
 				});
 				dialog.setVisible(true);
@@ -91,14 +91,14 @@ public class MenuBar extends JMenuBar {
 				saveFile(kind);
 			}
 		});
-		
+
 //		fileMenu.add(open);
 		fileMenu.add(save);
-		
+
 		add(home);
 		add(fileMenu);
 	}
-	
+
 	void openFile(Report kind) {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file", "xlsx", "xls");
 		fileChooser.setFileFilter(filter);
@@ -110,34 +110,34 @@ public class MenuBar extends JMenuBar {
 		}
 
 //		try {
-			System.out.println(fileChooser.getSelectedFile()); // 프린트
-			try {
-				HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileChooser.getSelectedFile()));
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			// 여기서부터 가지고 온 파일 읽어들이기
-			
+		System.out.println(fileChooser.getSelectedFile()); // 프린트
+		try {
+			HSSFWorkbook workbook = new HSSFWorkbook(new FileInputStream(fileChooser.getSelectedFile()));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// 여기서부터 가지고 온 파일 읽어들이기
+
 //			imagePanel.inputimage = ImageIO.read(fileChooser.getSelectedFile());
 //			imagePanel.width = imagePanel.inputimage.getWidth();
 //			imagePanel.height = imagePanel.inputimage.getHeight();
 //			imagePanel.repaint();
 //		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		
+
 		// 파일 읽어들여서 데이터로 가공하기
 	}
-	
+
 	void saveFile(Report kind) {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("excel file" , "xlsx", "xls");
 		fileChooser.setFileFilter(filter);
-		
+
 		int ret = fileChooser.showSaveDialog(parent);
 		if (ret != JFileChooser.APPROVE_OPTION){
 			JOptionPane.showMessageDialog(null, "파일이 저장되지 않았습니다.", "경고", JOptionPane.WARNING_MESSAGE);
