@@ -4,12 +4,17 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.Toolkit;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class ButtonGroup extends JPanel {
-	Dimension buttonSize = new Dimension(200, 60);
+	Dimension dimen = Toolkit.getDefaultToolkit().getScreenSize();	
+	int w = (int)dimen.getWidth()/2;
+	int h = (int)dimen.getHeight();
+	
+	Dimension buttonSize = new Dimension(w/2, h/7);
 	JButton[] buttons;
 	
 	public ButtonGroup(String[] texts) {

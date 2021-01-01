@@ -3,6 +3,7 @@ package panels;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -50,10 +51,20 @@ public class ExpenditureResolution extends JPanel {
 	JTextField month;
 	JTextField date;
 	
-	Dimension size = new Dimension(400, 630);
-	Dimension dateSize = new Dimension(400, 35);
-	Dimension expenditureKindSize = new Dimension(500, 50);
-	Dimension inputSize = new Dimension(400, 80);
+	Dimension dimen = Toolkit.getDefaultToolkit().getScreenSize();	
+	int w = (int)dimen.getWidth()/2;
+	int h = (int)dimen.getHeight();
+	
+//	Dimension size = new Dimension(400, 630);
+//	Dimension dateSize = new Dimension(400, 35);
+//	Dimension expenditureKindSize = new Dimension(500, 50);
+//	Dimension inputSize = new Dimension(400, 80);
+	
+	Dimension size = new Dimension(w, h);
+	Dimension dateSize = new Dimension(w-w/10, h/16);
+	Dimension expenditureKindSize = new Dimension(w, h/11);
+	Dimension tableSize = new Dimension(w-w/10, (h/13)*7);
+//	Dimension inputSize = new Dimension(w-w/10, (h/15)*2);
 	
 	public ExpenditureResolution(JFrame frame) {
 		menubar = new MenuBar(Report.EXPENDITURE, frame, this);
@@ -112,6 +123,7 @@ public class ExpenditureResolution extends JPanel {
 		};
 		table = new JTable(model);
 		JScrollPane scrollpane = new JScrollPane(table);
+		scrollpane.setPreferredSize(tableSize);
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
@@ -131,18 +143,19 @@ public class ExpenditureResolution extends JPanel {
 		
 		JPanel inputPanel1 = new JPanel();
 		inputPanel1.setLayout(new BoxLayout(inputPanel1, BoxLayout.X_AXIS));
+		inputPanel1.setPreferredSize(dateSize);
 		inputPanel1.add(kind);
 		inputPanel1.add(detailKind);
 		
 		JPanel inputPanel2 = new JPanel();
 		inputPanel2.setLayout(new BoxLayout(inputPanel2, BoxLayout.X_AXIS));
+		inputPanel2.setPreferredSize(dateSize);
 		inputPanel2.add(content);
 		inputPanel2.add(price);
 		inputPanel2.add(addBtn);
 		inputPanel2.add(delBtn);
 		
 		JPanel inputPanel = new JPanel(new GridLayout(2, 1, 0, 5));
-		inputPanel.setPreferredSize(inputSize);
 		inputPanel.add(inputPanel1);
 		inputPanel.add(inputPanel2);
 		

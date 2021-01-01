@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -40,8 +41,14 @@ public class ImportResoultion extends JPanel {
 	final String header[] = { "종류", "이름 / 내용", "금액" };
 	String contents[][] = { { "주일헌금", "전체", "0" } };
 	
-	Dimension size = new Dimension(400, 630);
-	Dimension importKindSize = new Dimension(500, 100);
+	Dimension dimen = Toolkit.getDefaultToolkit().getScreenSize();	
+	int w = (int)dimen.getWidth()/2;
+	int h = (int)dimen.getHeight();
+	Dimension size = new Dimension(w, h);
+	Dimension dateSize = new Dimension(w-w/10, h/16);
+	Dimension importKindSize = new Dimension(w, (h/13)*2);
+	Dimension tableSize = new Dimension(w-w/10, (h/13)*6);
+//	Dimension inputSize = new Dimension(w-w/10, (h/15)*2);
 	JComboBox<String> nameBox;
 	DefaultTableModel model;
 	JTable table;
@@ -66,9 +73,9 @@ public class ImportResoultion extends JPanel {
 	
 	private JPanel createDateSection() {
 		JLabel dateLabel = new JLabel("날짜 입력: ");
-		year = new HintTextField("년", 5);
-		month = new HintTextField("월", 4);
-		date = new HintTextField("일", 4);
+		year = new HintTextField("년", 3);
+		month = new HintTextField("월", 1);
+		date = new HintTextField("일", 1);
 		
 		JPanel datePanel = new JPanel();
 		datePanel.setLayout(new BoxLayout(datePanel, BoxLayout.X_AXIS));
@@ -76,6 +83,7 @@ public class ImportResoultion extends JPanel {
 		datePanel.add(year);
 		datePanel.add(month);
 		datePanel.add(date);
+		datePanel.setPreferredSize(dateSize);
 		
 		return datePanel;
 	}
@@ -104,6 +112,7 @@ public class ImportResoultion extends JPanel {
 		};
 		table = new JTable(model);
 		JScrollPane scrollpane = new JScrollPane(table);
+		scrollpane.setPreferredSize(tableSize);
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
@@ -113,10 +122,10 @@ public class ImportResoultion extends JPanel {
 	private JPanel createInputSection() {
 		nameBox = new JComboBox<String>(names);
 		JTextField nameOrContent = new HintTextField("이름 / 내용", 11);
-		JTextField price = new HintTextField("금액", 9);
+		JTextField price = new HintTextField("금액", 10);
 		JButton addBtn = createAddButton(nameOrContent, price);
 		JButton delBtn = createDeleteButton();
-		kind = new JTextField("십일조", 7);
+		kind = new JTextField("십일조");
 		kind.setEnabled(false);
 		nameBox.addActionListener(new ActionListener() {
 			@Override
@@ -129,11 +138,13 @@ public class ImportResoultion extends JPanel {
 		
 		JPanel inputPanel1 = new JPanel();
 		inputPanel1.setLayout(new BoxLayout(inputPanel1, BoxLayout.X_AXIS));
+		inputPanel1.setPreferredSize(dateSize);
 		inputPanel1.add(kind);
 		inputPanel1.add(nameBox);
 		
 		JPanel inputPanel2 = new JPanel();
 		inputPanel2.setLayout(new BoxLayout(inputPanel2, BoxLayout.X_AXIS));
+		inputPanel2.setPreferredSize(dateSize);
 		inputPanel2.add(nameOrContent);
 		inputPanel2.add(price);
 		inputPanel2.add(addBtn);
@@ -143,7 +154,6 @@ public class ImportResoultion extends JPanel {
 		inputPanel.setLayout(new GridLayout(2, 1, 0, 5));
 		inputPanel.add(inputPanel1);
 		inputPanel.add(inputPanel2);
-		
 		
 		return inputPanel;
 	}
@@ -174,6 +184,7 @@ public class ImportResoultion extends JPanel {
 	
 	private JButton createDeleteButton() {
 		JButton delBtn = new JButton("삭제");
+		
 		delBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

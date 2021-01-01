@@ -3,6 +3,7 @@ package panels;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,8 +15,13 @@ import panels.common_components.ButtonGroup;
 public class Menu extends JPanel {
 //	String[] buttons = { "수입 결의서", "지출 결의서", "회계 보고서", "연간 보고서" };
 	String[] buttons = { "수입 결의서", "지출 결의서" };
-	Dimension size = new Dimension(400, 690);
-	Dimension buttonGroupSize = new Dimension(300, 600);
+	
+	Dimension dimen = Toolkit.getDefaultToolkit().getScreenSize();	
+	int w = (int)dimen.getWidth()/2;
+	int h = (int)dimen.getHeight();
+
+	Dimension size = new Dimension(w, h);
+	Dimension buttonGroupSize = new Dimension(w/2, h-h/7);
 	
 	ButtonGroup menuBtns;
 	
