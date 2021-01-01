@@ -14,8 +14,8 @@ public class CheckDialog extends JDialog {
 	JButton confirm = new JButton("확인");
 	JButton cancel = new JButton("취소");
 	JLabel tempMessage = new JLabel("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", JLabel.CENTER);
-	JLabel message1 = new JLabel("정말로 홈으로 돌아가시겠습니까?", JLabel.CENTER);
-	JLabel message2 = new JLabel("지금까지 입력한 정보들이 모두 날아갑니다.", JLabel.CENTER);
+	JLabel message1 = new JLabel("홈으로 이동하시겠습니까?\n", JLabel.CENTER);
+	JLabel message2 = new JLabel("지금까지 입력한 정보가 모두 사라집니다.", JLabel.CENTER);
 	
 	CheckDialog(JFrame frame, String title) {
 		super(frame, title, true);
