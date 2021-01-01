@@ -25,7 +25,6 @@ import panels.ExpenditureResolution;
 import panels.ImportResoultion;
 import panels.Menu;
 
-
 public class MenuBar extends JMenuBar {
 	JFileChooser fileChooser = new JFileChooser();
 	JMenu home = new JMenu("홈");
@@ -37,7 +36,7 @@ public class MenuBar extends JMenuBar {
 
 	public enum Report {
 		IMPORT,
-		EXPENDITURE
+		EXPENDITURE,
 	}
 
 	public MenuBar(Report kind, JFrame frame, JPanel parent) {

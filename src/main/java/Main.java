@@ -5,12 +5,13 @@ import javax.swing.JFrame;
 import panels.ExpenditureResolution;
 import panels.ImportResoultion;
 import panels.Menu;
+// import panels.MonthlyResolution;
 
 public class Main extends JFrame {
 	ImportResoultion importPage  = new ImportResoultion(this);
 	ExpenditureResolution expenditurePage = new ExpenditureResolution(this);
 	Menu menuPage = new Menu(this, importPage, expenditurePage);
-	
+	// MonthlyResolution monthlyPage = new MonthlyResolution(this);
 	
 	Dimension size = new Dimension(500, 690);
 	
