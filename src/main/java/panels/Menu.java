@@ -1,4 +1,4 @@
-package panels.menu_home;
+package panels;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -6,13 +6,10 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import panels.common_components.ButtonGroup;
-import panels.import_resolution.ExpenditureResolution;
-import panels.import_resolution.ImportResoultion;
 
 public class Menu extends JPanel {
 //	String[] buttons = { "수입 결의서", "지출 결의서", "회계 보고서", "연간 보고서" };

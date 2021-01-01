@@ -1,13 +1,10 @@
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import panels.import_resolution.ExpenditureResolution;
-import panels.import_resolution.ImportResoultion;
-import panels.menu_home.Menu;
+import panels.ExpenditureResolution;
+import panels.ImportResoultion;
+import panels.Menu;
 
 public class Main extends JFrame {
 	ImportResoultion importPage  = new ImportResoultion(this);

@@ -1,4 +1,4 @@
-package manufacture.datas;
+package manufacture.importdata;
 
 public class Import {
 	public String category;

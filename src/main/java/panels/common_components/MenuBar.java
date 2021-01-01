@@ -1,17 +1,13 @@
 package panels.common_components;
 
-import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.*;
 
-import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -23,11 +19,11 @@ import excel.form.ExpenditureResolutionForm;
 import excel.form.ImportResolutionForm;
 import org.apache.poi.hssf.usermodel.*;
 
-import manufacture.datas.ExpenditureData;
-import manufacture.datas.ImportData;
-import panels.import_resolution.ExpenditureResolution;
-import panels.import_resolution.ImportResoultion;
-import panels.menu_home.Menu;
+import manufacture.expendituredata.ExpenditureData;
+import manufacture.importdata.ImportData;
+import panels.ExpenditureResolution;
+import panels.ImportResoultion;
+import panels.Menu;
 
 
 public class MenuBar extends JMenuBar {

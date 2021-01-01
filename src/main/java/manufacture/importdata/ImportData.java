@@ -1,9 +1,8 @@
-package manufacture.datas;
+package manufacture.importdata;
 
 import java.util.HashMap;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Comparator;
 
 import javax.swing.table.DefaultTableModel;
 

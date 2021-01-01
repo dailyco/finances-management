@@ -1,4 +1,4 @@
-package manufacture.datas;
+package manufacture.expendituredata;
 
 public class Expenditure {
 	public String category;

@@ -1,7 +1,8 @@
-package excel.form.data;
+package excel.form.importdata;
 
-import manufacture.datas.Import;
-import manufacture.datas.ImportData;
+import manufacture.importdata.Import;
+import manufacture.importdata.ImportData;
+
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.VerticalAlignment;

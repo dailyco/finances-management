@@ -1,4 +1,4 @@
-package manufacture.datas;
+package manufacture.expendituredata;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

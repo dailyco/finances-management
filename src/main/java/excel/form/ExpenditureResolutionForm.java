@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-import excel.form.datas.ExpenditureSheet;
-import manufacture.datas.ExpenditureData;
+import excel.form.expendituredata.ExpenditureSheet;
+import manufacture.expendituredata.ExpenditureData;
 
 public class ExpenditureResolutionForm {
 	HSSFWorkbook workbook;
