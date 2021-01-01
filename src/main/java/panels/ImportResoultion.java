@@ -20,7 +20,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
-import javax.xml.soap.Text;
 
 import panels.common_components.HintTextField;
 import panels.common_components.MenuBar;
@@ -50,7 +49,7 @@ public class ImportResoultion extends JPanel {
 	int h = (int)dimen.getHeight();
 	Dimension size = new Dimension(w, h);
 	Dimension dateSize = new Dimension(w-w/10, h/16);
-	Dimension importKindSize = new Dimension(w, (h/13)*2);
+	Dimension importKindSize = new Dimension(w-w/11, (h/13)*2);
 	Dimension tableSize = new Dimension(w-w/10, (h/13)*6);
 //	Dimension inputSize = new Dimension(w-w/10, (h/15)*2);
 	JComboBox<String> nameBox;
@@ -123,6 +122,9 @@ public class ImportResoultion extends JPanel {
 		table = new JTable(model);
 		JScrollPane scrollpane = new JScrollPane(table);
 		scrollpane.setPreferredSize(tableSize);
+		table.getTableHeader().setFont(textFont);
+		table.setFont(textFont);
+		table.setRowHeight(textFont.getSize());
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
@@ -137,6 +139,8 @@ public class ImportResoultion extends JPanel {
 		JButton delBtn = createDeleteButton();
 		kind = new JTextField("십일조");
 		kind.setEnabled(false);
+		kind.setFont(textFont);
+		nameBox.setFont(textFont);
 		nameBox.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

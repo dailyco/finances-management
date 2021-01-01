@@ -124,6 +124,9 @@ public class ExpenditureResolution extends JPanel {
 		table = new JTable(model);
 		JScrollPane scrollpane = new JScrollPane(table);
 		scrollpane.setPreferredSize(tableSize);
+		table.getTableHeader().setFont(textFont);
+		table.setFont(textFont);
+		table.setRowHeight(textFont.getSize());
 		table.getTableHeader().setReorderingAllowed(false);
 		table.getTableHeader().setResizingAllowed(false);
 		
