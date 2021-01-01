@@ -27,6 +27,7 @@ import panels.common_components.MenuBar.Report;
 
 public class ExpenditureResolution extends JPanel {
 	MenuBar menubar = new MenuBar(Report.EXPENDITURE, this);
+	public JFrame frame;
 	
 	String[] expenditures = { "관리", "교육", "봉사", "예배", "선교", "자본관리", "기타" };
 	String[][] detailExpenditures = { { "공과금", "도서 인쇄비", "보험료", "비품", "사무비", "상회비", "수도 광열비", "시설관리 유지비", "정원 관리비", "연료비", "잡비", "중식비", "카페 재료비", "지급이자", "차량 유지비", "통신비", "회의비" }, { "교육 활동비", "교육 훈련비", "도서비", "부서협의회비", "장학금" }, { "경조비", "사회봉사비", "접대비", "행사비" }, { "강사료", "목회자 생활비", "목회 활동비", "상여금", "찬양대비", "연금 및 의보" }, { "국내 선교비", "국외 선교비", "새신자 교육비", "심방비" }, { "건물 임차료", "건축", "제적립 예금", "차량", "원금상환", "토지" }, { "예비비" } };
@@ -55,7 +56,7 @@ public class ExpenditureResolution extends JPanel {
 	Dimension inputSize = new Dimension(400, 80);
 	
 	public ExpenditureResolution(JFrame frame) {
-		
+		this.frame = frame;
 		JPanel datePanel = createDateSection();
 		JPanel expenditureBtnGroup = createKindSection();
 		JScrollPane tablePanel = createTableSection();

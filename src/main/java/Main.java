@@ -23,8 +23,8 @@ public class Main extends JFrame implements ActionListener {
 		
 		menuPage.getImportBtn().addActionListener(this);
 		menuPage.getExpenditureBtn().addActionListener(this);
-		menuPage.getImExBtn().addActionListener(this);
-		menuPage.getYearBtn().addActionListener(this);
+//		menuPage.getImExBtn().addActionListener(this);
+//		menuPage.getYearBtn().addActionListener(this);
 		
 		add(menuPage);
 
@@ -56,19 +56,19 @@ public class Main extends JFrame implements ActionListener {
 			repaint();
 		}
 
-		if (button == menuPage.getImExBtn()) {
-			remove(menuPage);
-//			add(expenditurePage);
-			revalidate();
-			repaint();
-		}
-
-		if (button == menuPage.getYearBtn()) {
-			remove(menuPage);
-//			add(expenditurePage);
-			revalidate();
-			repaint();
-		}
+//		if (button == menuPage.getImExBtn()) {
+//			remove(menuPage);
+////			add(expenditurePage);
+//			revalidate();
+//			repaint();
+//		}
+//
+//		if (button == menuPage.getYearBtn()) {
+//			remove(menuPage);
+////			add(expenditurePage);
+//			revalidate();
+//			repaint();
+//		}
 	}
 
 }

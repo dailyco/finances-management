@@ -6,7 +6,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.*;
 
+import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -29,9 +33,10 @@ public class MenuBar extends JMenuBar {
 	JMenu home = new JMenu("홈");
 	JMenu fileMenu = new JMenu("파일");
 	JMenuItem save = new JMenuItem("저장");
-	JMenuItem open = new JMenuItem("불러오기");
+//	JMenuItem open = new JMenuItem("불러오기");
 	
 	JPanel parent;
+	JFrame frame;
 
 	public enum Report {
 		IMPORT,
@@ -40,12 +45,17 @@ public class MenuBar extends JMenuBar {
 
 	public MenuBar(Report kind, JPanel parent) {
 		this.parent = parent;
-
+		
+		if (parent instanceof ImportResoultion) {
+			this.frame = ((ImportResoultion)parent).frame;
+		} else if (parent instanceof ExpenditureResolution) {
+			this.frame = ((ExpenditureResolution)parent).frame;
+		}
+		
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				System.out.println("클릭?"); //프린트
-				// dialog 띄워주고 - 취소 or 홈으로 가기
+				new CheckDialog(frame, "홈 확인", true);
 			}
 
 			@Override
@@ -60,12 +70,12 @@ public class MenuBar extends JMenuBar {
 			@Override
 			public void mouseExited(MouseEvent e) {}
 		});
-		open.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				openFile(kind);
-			}
-		});
+//		open.addActionListener(new ActionListener() {
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				openFile(kind);
+//			}
+//		});
 		save.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -73,7 +83,7 @@ public class MenuBar extends JMenuBar {
 			}
 		});
 		
-		fileMenu.add(open);
+//		fileMenu.add(open);
 		fileMenu.add(save);
 		
 		add(home);
