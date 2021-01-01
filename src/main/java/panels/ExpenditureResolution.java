@@ -142,9 +142,10 @@ public class ExpenditureResolution extends JPanel {
 		JButton addBtn = createAddButton(content, price);
 		JButton delBtn = createDeleteButton();
 		kind.setEnabled(false);
-		detailKind.setPreferredSize(new Dimension(150, 10));
-
 		kind.setFont(textFont);
+		detailKind.setPreferredSize(new Dimension(150, 10));
+		detailKind.setFont(textFont);
+		
 		content.setFont(textFont);
 		price.setFont(textFont);
 		addBtn.setFont(textFont);
