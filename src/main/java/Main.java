@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import panels.ExpenditureResolution;
 import panels.ImportResoultion;
 import panels.Menu;
+import panels.font.TitleFont;
 // import panels.MonthlyResolution;
 
 public class Main extends JFrame {
@@ -16,6 +17,7 @@ public class Main extends JFrame {
 	Dimension size = new Dimension(500, 690);
 	
 	Main() {
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("기쁨의 교회 재정 프로그램");
 		setPreferredSize(size);

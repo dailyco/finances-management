@@ -15,34 +15,33 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/feature/size-up" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ff1f09-31ab-48a6-91f1-6dc3f6a81497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/panels/resolution/MonthlyResolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/finances-management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/finances-management.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ExpenditureResolution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/import_resolution/ImportResoultion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LibraryTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/import_resolution/ExpenditureResolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/resolution/ExpenditureResolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/import_resolution/ImportResoultion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/resolution/ImportResoultion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/panels/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/panels/font/TextFont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/font/TextFont.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/panels/font/TitleFont.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/font/TitleFont.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,34 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="finances-management" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="finances-management" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="finances-management" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608957589637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dialog 문구 수정">
+      <created>1609506100644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609506100644</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +177,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/size-up" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -152,7 +198,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[INCOME EXCEL FORMAT]&#10;- income format(header, aside) 작업 완료&#10;- income format(body) 작업중" />
-    <option name="LAST_COMMIT_MESSAGE" value="[INCOME EXCEL FORMAT]&#10;- income format(header, aside) 작업 완료&#10;- income format(body) 작업중" />
+    <MESSAGE value="dialog 문구 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="dialog 문구 수정" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="153" key="#Project_Structure" timestamp="1608957677190">
@@ -171,10 +218,11 @@
       <screen x="75" y="23" width="1717" height="1097" />
     </state>
     <state x="721" y="283" key="#com.intellij.ide.macro.MacrosDialog/75.23.1717.1097@75.23.1717.1097" timestamp="1609387234042" />
-    <state x="746" y="262" key="#com.intellij.ide.util.MemberChooser" timestamp="1608908867869">
-      <screen x="66" y="23" width="1726" height="1097" />
+    <state x="747" y="262" key="#com.intellij.ide.util.MemberChooser" timestamp="1609508616468">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
-    <state x="746" y="262" key="#com.intellij.ide.util.MemberChooser/66.23.1726.1097@66.23.1726.1097" timestamp="1608908867869" />
+    <state x="746" y="262" key="#com.intellij.ide.util.MemberChooser/66.23.1726.1097@66.23.1726.1097" timestamp="1609508336936" />
+    <state x="747" y="262" key="#com.intellij.ide.util.MemberChooser/68.23.1724.1097@68.23.1724.1097" timestamp="1609508616468" />
     <state x="671" y="368" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608893868124">
       <screen x="75" y="23" width="1717" height="1097" />
     </state>
@@ -183,82 +231,86 @@
       <screen x="75" y="23" width="1717" height="1097" />
     </state>
     <state x="451" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/75.23.1717.1097@75.23.1717.1097" timestamp="1608946696172" />
-    <state width="1675" height="374" key="GridCell.Tab.0.bottom" timestamp="1609387513884">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom" timestamp="1609509178424">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1608919724100" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1608919465175" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406439" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178424" />
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515644" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
-    <state width="1675" height="374" key="GridCell.Tab.0.center" timestamp="1609387513883">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center" timestamp="1609509178423">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1608899957421" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center/66.23.1726.1097@66.23.1726.1097" timestamp="1608919724100" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center/68.23.1724.1097@68.23.1724.1097" timestamp="1608919465174" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406438" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
     <state width="1675" height="374" key="GridCell.Tab.0.center/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="374" key="GridCell.Tab.0.left" timestamp="1609387513883">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left" timestamp="1609509178423">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.left/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065721" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left/66.23.1726.1097@66.23.1726.1097" timestamp="1608919724099" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left/68.23.1724.1097@68.23.1724.1097" timestamp="1608919465174" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406437" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
     <state width="1675" height="303" key="GridCell.Tab.0.left/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
     <state width="1675" height="374" key="GridCell.Tab.0.left/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="374" key="GridCell.Tab.0.right" timestamp="1609387513884">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right" timestamp="1609509178423">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.right/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right/66.23.1726.1097@66.23.1726.1097" timestamp="1608919724100" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right/68.23.1724.1097@68.23.1724.1097" timestamp="1608919465174" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right/66.23.1726.1097@66.23.1726.1097" timestamp="1609507406438" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right/68.23.1724.1097@68.23.1724.1097" timestamp="1609509178423" />
     <state width="1675" height="303" key="GridCell.Tab.0.right/71.23.1721.1097@71.23.1721.1097" timestamp="1608949515643" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
-    <state width="1675" height="374" key="GridCell.Tab.1.bottom" timestamp="1609387513746">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="374" key="GridCell.Tab.1.bottom" timestamp="1609506155254">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.1.bottom/63.23.1729.1097@63.23.1729.1097" timestamp="1608910575584" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1608910374403" />
-    <state width="1675" height="374" key="GridCell.Tab.1.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1608916912557" />
+    <state width="1675" height="374" key="GridCell.Tab.1.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1609506155254" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1608900027562" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957451" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513746" />
-    <state width="1675" height="374" key="GridCell.Tab.1.center" timestamp="1609387513745">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="374" key="GridCell.Tab.1.center" timestamp="1609506155254">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.1.center/63.23.1729.1097@63.23.1729.1097" timestamp="1608910575583" />
     <state width="1675" height="374" key="GridCell.Tab.1.center/66.23.1726.1097@66.23.1726.1097" timestamp="1608910374402" />
-    <state width="1675" height="374" key="GridCell.Tab.1.center/68.23.1724.1097@68.23.1724.1097" timestamp="1608916912556" />
+    <state width="1675" height="374" key="GridCell.Tab.1.center/68.23.1724.1097@68.23.1724.1097" timestamp="1609506155254" />
     <state width="1675" height="374" key="GridCell.Tab.1.center/71.23.1721.1097@71.23.1721.1097" timestamp="1608900027562" />
     <state width="1675" height="374" key="GridCell.Tab.1.center/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957451" />
     <state width="1675" height="374" key="GridCell.Tab.1.center/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513745" />
-    <state width="1675" height="374" key="GridCell.Tab.1.left" timestamp="1609387513745">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="374" key="GridCell.Tab.1.left" timestamp="1609506155254">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.1.left/63.23.1729.1097@63.23.1729.1097" timestamp="1608910575583" />
     <state width="1675" height="374" key="GridCell.Tab.1.left/66.23.1726.1097@66.23.1726.1097" timestamp="1608910374402" />
-    <state width="1675" height="374" key="GridCell.Tab.1.left/68.23.1724.1097@68.23.1724.1097" timestamp="1608916912556" />
+    <state width="1675" height="374" key="GridCell.Tab.1.left/68.23.1724.1097@68.23.1724.1097" timestamp="1609506155254" />
     <state width="1675" height="374" key="GridCell.Tab.1.left/71.23.1721.1097@71.23.1721.1097" timestamp="1608900027562" />
     <state width="1675" height="374" key="GridCell.Tab.1.left/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957451" />
     <state width="1675" height="374" key="GridCell.Tab.1.left/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513745" />
-    <state width="1675" height="374" key="GridCell.Tab.1.right" timestamp="1609387513746">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state width="1675" height="374" key="GridCell.Tab.1.right" timestamp="1609506155254">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.1.right/63.23.1729.1097@63.23.1729.1097" timestamp="1608910575584" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/66.23.1726.1097@66.23.1726.1097" timestamp="1608910374402" />
-    <state width="1675" height="374" key="GridCell.Tab.1.right/68.23.1724.1097@68.23.1724.1097" timestamp="1608916912557" />
+    <state width="1675" height="374" key="GridCell.Tab.1.right/68.23.1724.1097@68.23.1724.1097" timestamp="1609506155254" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/71.23.1721.1097@71.23.1721.1097" timestamp="1608900027562" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957451" />
     <state width="1675" height="374" key="GridCell.Tab.1.right/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513746" />
-    <state x="726" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609385921875">
-      <screen x="75" y="23" width="1717" height="1097" />
+    <state x="639" y="281" key="RollbackChangesDialog" timestamp="1609506066847">
+      <screen x="68" y="23" width="1724" height="1097" />
+    </state>
+    <state x="639" y="281" key="RollbackChangesDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609506066847" />
+    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609506084152">
+      <screen x="68" y="23" width="1724" height="1097" />
     </state>
     <state x="721" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/66.23.1726.1097@66.23.1726.1097" timestamp="1608914925235" />
-    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/68.23.1724.1097@68.23.1724.1097" timestamp="1608918885091" />
+    <state x="722" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/68.23.1724.1097@68.23.1724.1097" timestamp="1609506084152" />
     <state x="726" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/75.23.1717.1097@75.23.1717.1097" timestamp="1609385921875" />
     <state x="631" y="326" width="604" height="490" key="find.popup" timestamp="1609387568613">
       <screen x="71" y="23" width="1721" height="1097" />

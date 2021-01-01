@@ -1,9 +1,6 @@
 package panels;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,11 +15,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.xml.soap.Text;
 
 import panels.common_components.HintTextField;
 import panels.common_components.MenuBar;
 import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
+import panels.font.TextFont;
+import panels.font.TitleFont;
 
 public class ImportResoultion extends JPanel {
 	MenuBar menubar;
@@ -49,6 +49,8 @@ public class ImportResoultion extends JPanel {
 	JTextField year;
 	JTextField month;
 	JTextField date;
+
+	Font textFont = new TextFont().getText();
 	
 	public ImportResoultion(JFrame frame) {
 		menubar = new MenuBar(Report.IMPORT, frame, this);
@@ -69,6 +71,11 @@ public class ImportResoultion extends JPanel {
 		year = new HintTextField("년", 5);
 		month = new HintTextField("월", 4);
 		date = new HintTextField("일", 4);
+
+		dateLabel.setFont(textFont);
+		year.setFont(textFont);
+		month.setFont(textFont);
+		date.setFont(textFont);
 		
 		JPanel datePanel = new JPanel();
 		datePanel.setLayout(new BoxLayout(datePanel, BoxLayout.X_AXIS));
@@ -86,10 +93,9 @@ public class ImportResoultion extends JPanel {
 		for (JRadioButton rb : ((RadioButtonGroup) importBtnGroup).getButtons()) {
 			rb.addActionListener(new ActionListener() {
 				@Override
-				public void actionPerformed(ActionEvent e) {
-					kind.setText(rb.getText());
-				}
+				public void actionPerformed(ActionEvent e) { kind.setText(rb.getText()); }
 			});
+			rb.setFont(textFont);
 		}
 		
 		return importBtnGroup;
@@ -126,6 +132,11 @@ public class ImportResoultion extends JPanel {
 				nameOrContent.setText(name);
 			}
 		});
+
+		nameOrContent.setFont(textFont);
+		price.setFont(textFont);
+		addBtn.setFont(textFont);
+		delBtn.setFont(textFont);
 		
 		JPanel inputPanel1 = new JPanel();
 		inputPanel1.setLayout(new BoxLayout(inputPanel1, BoxLayout.X_AXIS));

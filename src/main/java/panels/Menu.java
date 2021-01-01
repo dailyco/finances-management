@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import panels.common_components.ButtonGroup;
+import panels.font.TitleFont;
 
 public class Menu extends JPanel {
 //	String[] buttons = { "수입 결의서", "지출 결의서", "회계 보고서", "연간 보고서" };
@@ -23,6 +24,10 @@ public class Menu extends JPanel {
 		menuBtns = new ButtonGroup(buttons);
 		menuBtns.setPreferredSize(buttonGroupSize);
 		Component menu = this;
+
+		TitleFont titleFont = new TitleFont();
+		menuBtns.getBtns()[0].setFont(titleFont.getTitle());
+		menuBtns.getBtns()[1].setFont(titleFont.getTitle());
 		
 		menuBtns.getBtns()[0].addActionListener(new ActionListener() {
 			@Override
