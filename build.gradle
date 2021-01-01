@@ -11,24 +11,8 @@ plugins {
     id 'java-library'
 }
 
-apply plugin: 'java'
 apply plugin: 'application'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-mainClassName = 'Main'
-version = '1.0'
-
-jar {
-    manifest {
-        attributes 'Title': 'Joyful Church Finances Management', 'Version': version, 'Main-Class': mainClassName
-    }
-    archiveName 'account.jar'
-    dependsOn configurations.runtime
-    from {
-        configurations.compile.collect { it.isDirectory()? it: zipTree(it) }
-    }
-}
+mainClassName = "Main"
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
@@ -39,7 +23,7 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-
+    
     // https://mvnrepository.com/artifact/org.apache.poi/poi
     compile group: 'org.apache.poi', name: 'poi', version: '4.1.2'
 }
