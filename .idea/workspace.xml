@@ -27,18 +27,16 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/feature/size-up" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ff1f09-31ab-48a6-91f1-6dc3f6a81497" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/panels/common_components/MenuBar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manufacture/importdata/ImportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manufacture/importdata/ImportData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/ImportResoultion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/panels/common_components/MenuBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="excel-weekly-read" />
+        <entry key="$PROJECT_DIR$" value="feature/size-up" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -233,39 +231,39 @@
     </state>
     <state x="175" y="123" width="1517" height="897" key="DiffContextDialog/68.23.1724.1097@68.23.1724.1097" timestamp="1609509970508" />
     <state x="175" y="123" width="1517" height="897" key="DiffContextDialog/71.23.1721.1097@71.23.1721.1097" timestamp="1609510391640" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom" timestamp="1609511119448">
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom" timestamp="1609511561399">
       <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222573" />
     <state width="1675" height="303" key="GridCell.Tab.0.bottom/68.23.1724.1097@68.23.1724.1097" timestamp="1609510615512" />
-    <state width="1675" height="303" key="GridCell.Tab.0.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1609511119448" />
+    <state width="1675" height="303" key="GridCell.Tab.0.bottom/71.23.1721.1097@71.23.1721.1097" timestamp="1609511561399" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.bottom/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center" timestamp="1609511119448">
+    <state width="1675" height="303" key="GridCell.Tab.0.center" timestamp="1609511561398">
       <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="374" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1608899957421" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222572" />
     <state width="1675" height="303" key="GridCell.Tab.0.center/68.23.1724.1097@68.23.1724.1097" timestamp="1609510615512" />
-    <state width="1675" height="303" key="GridCell.Tab.0.center/71.23.1721.1097@71.23.1721.1097" timestamp="1609511119448" />
+    <state width="1675" height="303" key="GridCell.Tab.0.center/71.23.1721.1097@71.23.1721.1097" timestamp="1609511561398" />
     <state width="1675" height="374" key="GridCell.Tab.0.center/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left" timestamp="1609511119447">
+    <state width="1675" height="303" key="GridCell.Tab.0.left" timestamp="1609511561397">
       <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.left/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065721" />
     <state width="1675" height="303" key="GridCell.Tab.0.left/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222571" />
     <state width="1675" height="303" key="GridCell.Tab.0.left/68.23.1724.1097@68.23.1724.1097" timestamp="1609510615512" />
-    <state width="1675" height="303" key="GridCell.Tab.0.left/71.23.1721.1097@71.23.1721.1097" timestamp="1609511119447" />
+    <state width="1675" height="303" key="GridCell.Tab.0.left/71.23.1721.1097@71.23.1721.1097" timestamp="1609511561397" />
     <state width="1675" height="374" key="GridCell.Tab.0.left/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513883" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right" timestamp="1609511119448">
+    <state width="1675" height="303" key="GridCell.Tab.0.right" timestamp="1609511561398">
       <screen x="71" y="23" width="1721" height="1097" />
     </state>
     <state width="1675" height="303" key="GridCell.Tab.0.right/63.23.1729.1097@63.23.1729.1097" timestamp="1608918065722" />
     <state width="1675" height="303" key="GridCell.Tab.0.right/66.23.1726.1097@66.23.1726.1097" timestamp="1609509222572" />
     <state width="1675" height="303" key="GridCell.Tab.0.right/68.23.1724.1097@68.23.1724.1097" timestamp="1609510615512" />
-    <state width="1675" height="303" key="GridCell.Tab.0.right/71.23.1721.1097@71.23.1721.1097" timestamp="1609511119448" />
+    <state width="1675" height="303" key="GridCell.Tab.0.right/71.23.1721.1097@71.23.1721.1097" timestamp="1609511561398" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@0.0.1792.1120" timestamp="1608899957450" />
     <state width="1675" height="374" key="GridCell.Tab.0.right/75.23.1717.1097@75.23.1717.1097" timestamp="1609387513884" />
     <state width="1675" height="374" key="GridCell.Tab.1.bottom" timestamp="1609506155254">
