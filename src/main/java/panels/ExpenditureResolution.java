@@ -1,9 +1,6 @@
 package panels;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -25,6 +22,7 @@ import panels.common_components.HintTextField;
 import panels.common_components.MenuBar;
 import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
+import panels.font.TextFont;
 
 public class ExpenditureResolution extends JPanel {
 	MenuBar menubar;
@@ -59,6 +57,8 @@ public class ExpenditureResolution extends JPanel {
 	Dimension dateSize = new Dimension(w-w/10, h/16);
 	Dimension expenditureKindSize = new Dimension(w, h/11);
 	Dimension tableSize = new Dimension(w-w/10, (h/13)*7);
+
+	Font textFont = new TextFont().getText();
 	
 	public ExpenditureResolution(JFrame frame) {
 		menubar = new MenuBar(Report.EXPENDITURE, frame, this);
@@ -79,6 +79,11 @@ public class ExpenditureResolution extends JPanel {
 		year = new HintTextField("년", 5);
 		month = new HintTextField("월", 4);
 		date = new HintTextField("일", 4);
+
+		dateLabel.setFont(textFont);
+		year.setFont(textFont);
+		month.setFont(textFont);
+		date.setFont(textFont);
 		
 		JPanel datePanel = new JPanel();
 		datePanel.setPreferredSize(dateSize);
@@ -103,6 +108,7 @@ public class ExpenditureResolution extends JPanel {
 					detailKind.setModel(comboBoxModel);
 				}
 			});
+			rb.setFont(textFont);
 		}
 		
 		return expenditureBtnGroup;
@@ -137,6 +143,12 @@ public class ExpenditureResolution extends JPanel {
 		JButton delBtn = createDeleteButton();
 		kind.setEnabled(false);
 		detailKind.setPreferredSize(new Dimension(150, 10));
+
+		kind.setFont(textFont);
+		content.setFont(textFont);
+		price.setFont(textFont);
+		addBtn.setFont(textFont);
+		delBtn.setFont(textFont);
 		
 		JPanel inputPanel1 = new JPanel();
 		inputPanel1.setLayout(new BoxLayout(inputPanel1, BoxLayout.X_AXIS));

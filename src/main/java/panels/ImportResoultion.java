@@ -26,7 +26,6 @@ import panels.common_components.MenuBar;
 import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
 import panels.font.TextFont;
-import panels.font.TitleFont;
 
 public class ImportResoultion extends JPanel {
 	MenuBar menubar;
