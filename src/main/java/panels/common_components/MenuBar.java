@@ -101,6 +101,10 @@ public class MenuBar extends JMenuBar {
 
 		add(home);
 		add(fileMenu);
+
+		home.setFont(textFont);
+		fileMenu.setFont(textFont);
+		save.setFont(textFont);
 	}
 
 	void openFile(Report kind) {

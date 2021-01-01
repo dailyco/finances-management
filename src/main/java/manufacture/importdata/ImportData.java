@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class ImportData extends HashMap<String, ArrayList<Import>> {
 	HashMap<String, Integer> categorySum = new HashMap<String, Integer>();
-	String[] categoryOrder = { "주일헌금", "십일조", "감사헌금", "선교헌금", "건축헌금", "예금이자", "부활감사", "맥추감사", "성탄감사", "추수감사", "신년감사", "기타", "일시차입금", "적립금인출", "차입금", "전년도이월금" };
+	String[] categoryOrder = { "주일헌금", "십일조", "감사헌금", "선교헌금", "건축헌금", "부활감사", "맥추감사", "성탄감사", "추수감사", "신년감사", "예금이자", "일시차입금", "적립금인출", "차입금", "전년도이월금", "기타" };
 	String[] categoryContentOrder = { "감사헌금", "선교헌금", "건축헌금", "십일조", "부활감사", "맥추감사", "성탄감사", "추수감사", "신년감사", "일시차입금", "적립금인출", "차입금", "전년도이월금", "예금이자", "기타" };
 	String date;
 	Integer totalSum = 0;
