@@ -25,8 +25,7 @@ import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
 
 public class ImportResoultion extends JPanel {
-	MenuBar menubar = new MenuBar(Report.IMPORT, this);
-	public JFrame frame;
+	MenuBar menubar;
 	
 	String[] incomes = { "십일조", "감사헌금", "선교헌금", "건축헌금", "예금이자", "부활감사", "맥추감사", "성탄감사", "추수감사", "신년감사", "기타", "일시차입금", "적립금인출", "차입금", "전년도이월금" };
 	String[] names = { "강재구", "강상완", "강승현", "김명중", "김병선", "김상란", "김연심", "김옥경", "김은희", "김정현", "김진배", "김현섭", "김현숙", 
@@ -52,7 +51,7 @@ public class ImportResoultion extends JPanel {
 	JTextField date;
 	
 	public ImportResoultion(JFrame frame) {
-		this.frame = frame;
+		menubar = new MenuBar(Report.IMPORT, frame, this);
 		JPanel datePanel = createDateSection();
 		JPanel importBtnGroup = createKindSection();
 		JScrollPane tablePanel = createTableSection();

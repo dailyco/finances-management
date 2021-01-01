@@ -26,7 +26,7 @@ import panels.common_components.RadioButtonGroup;
 import panels.common_components.MenuBar.Report;
 
 public class ExpenditureResolution extends JPanel {
-	MenuBar menubar = new MenuBar(Report.EXPENDITURE, this);
+	MenuBar menubar;
 	public JFrame frame;
 	
 	String[] expenditures = { "관리", "교육", "봉사", "예배", "선교", "자본관리", "기타" };
@@ -56,7 +56,7 @@ public class ExpenditureResolution extends JPanel {
 	Dimension inputSize = new Dimension(400, 80);
 	
 	public ExpenditureResolution(JFrame frame) {
-		this.frame = frame;
+		menubar = new MenuBar(Report.EXPENDITURE, frame, this);
 		JPanel datePanel = createDateSection();
 		JPanel expenditureBtnGroup = createKindSection();
 		JScrollPane tablePanel = createTableSection();

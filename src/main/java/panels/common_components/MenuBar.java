@@ -1,5 +1,6 @@
 package panels.common_components;
 
+import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -26,6 +27,7 @@ import manufacture.datas.ExpenditureData;
 import manufacture.datas.ImportData;
 import panels.import_resolution.ExpenditureResolution;
 import panels.import_resolution.ImportResoultion;
+import panels.menu_home.Menu;
 
 
 public class MenuBar extends JMenuBar {
@@ -36,26 +38,38 @@ public class MenuBar extends JMenuBar {
 //	JMenuItem open = new JMenuItem("불러오기");
 	
 	JPanel parent;
-	JFrame frame;
 
 	public enum Report {
 		IMPORT,
 		EXPENDITURE
 	}
 
-	public MenuBar(Report kind, JPanel parent) {
+	public MenuBar(Report kind, JFrame frame, JPanel parent) {
 		this.parent = parent;
-		
-		if (parent instanceof ImportResoultion) {
-			this.frame = ((ImportResoultion)parent).frame;
-		} else if (parent instanceof ExpenditureResolution) {
-			this.frame = ((ExpenditureResolution)parent).frame;
-		}
 		
 		home.addMouseListener(new MouseListener() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				new CheckDialog(frame, "홈 확인", true);
+				CheckDialog dialog = new CheckDialog(frame, "홈 확인");
+				dialog.confirm.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						frame.remove(parent);
+						frame.add(new Menu(frame, new ImportResoultion(frame), new ExpenditureResolution(frame)));
+						frame.setJMenuBar(null);
+						frame.revalidate();
+						frame.repaint();
+						
+				        dialog.dispose(); //다이얼로그 제거
+					}
+				});
+				dialog.cancel.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+				        dialog.dispose(); //다이얼로그 제거
+					}
+				});
+				dialog.setVisible(true);
 			}
 
 			@Override
