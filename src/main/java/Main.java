@@ -1,4 +1,5 @@
 import java.awt.Dimension;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
@@ -14,8 +15,11 @@ public class Main extends JFrame {
 	Menu menuPage = new Menu(this, importPage, expenditurePage);
 	// MonthlyResolution monthlyPage = new MonthlyResolution(this);
 	
-	Dimension size = new Dimension(500, 690);
-	
+	Dimension dimen = Toolkit.getDefaultToolkit().getScreenSize();	
+	int w = (int)dimen.getWidth()/2;
+	int h = (int)dimen.getHeight();
+	Dimension size = new Dimension(w, h);
+
 	Main() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
